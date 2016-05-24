@@ -13,8 +13,8 @@ Then the task to `phpci.yml`:
 ```
 \SergiuParaschiv\PHPCI\Plugin\JSCPD:
     directory: "frontend"
-    command: "npm run -s mess:ci"
-    data_offset: 2
+    command: "npm run mess:ci"
+    allowed_duplication_percent: 5
 ```
 
-`mess:ci` in `package.json` should be `"jscpd --path app/ --languages javascript,jsx --exclude test/mocks/* --reporter xml"`
+`mess:ci` in `package.json` should be `"jscpd --path app/ --languages javascript,jsx --exclude test/mocks/* --reporter xml --limit $LIMIT --output $OUTPUT"`
