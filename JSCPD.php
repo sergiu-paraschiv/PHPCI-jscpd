@@ -44,7 +44,7 @@ class JSCPD implements \PHPCI\Plugin
 
         $this->phpci->logExecOutput(false);
 
-        $out = $phpci->buildPath . 'jscpd.xml';
+        $out = $this->phpci->buildPath . 'jscpd.xml';
 
         $cmd = 'cd ' . $this->directory . '; LIMIT=' . $this->allowed_duplication_percent . ' OUTPUT=' . $out . '  ' . $this->command . '; cat ' . $out;
         $success = $this->phpci->executeCommand($cmd);
