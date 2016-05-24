@@ -1,0 +1,17 @@
+{
+    "name": "sergiu-paraschiv/phpci-jspcd",
+    "description": "npm JSCPD plugin for PHPCI",
+    "authors": [
+        {
+            "name": "Sergiu Paraschiv",
+            "email": "sergiu.paraschiv@array51.com"
+        }
+    ],
+    "require": {},
+    "target-dir": "SergiuParaschiv/PHPCI/Plugin",
+    "autoload": {
+        "psr-0": {
+            "SergiuParaschiv\\PHPCI\\Plugin": ""
+        }
+    }
+}
